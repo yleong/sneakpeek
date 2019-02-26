@@ -8,6 +8,7 @@ from handlers.CNAlifestyleHandler import CNAlifestyleHandler
 from handlers.RicemediaHandler import RicemediaHandler
 from handlers.STHandler import STHandler
 from handlers.TodayonlineHandler import TodayonlineHandler
+from handlers.YahooHandler import YahooHandler
 
 
 class HandlerManager:
@@ -33,6 +34,9 @@ class HandlerManager:
         ),
         "todayonline.com": defaultdict(
             lambda: TodayonlineHandler
+        ),
+        "yahoo.com": defaultdict(
+            lambda: YahooHandler
         ),
         "zula.sg": defaultdict(
             lambda: ArticleHandler

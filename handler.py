@@ -7,6 +7,7 @@ from handlers.BusinesstimesHandler import BusinesstimesHandler
 from handlers.CNAlifestyleHandler import CNAlifestyleHandler
 from handlers.RicemediaHandler import RicemediaHandler
 from handlers.STHandler import STHandler
+from handlers.TNPHandler import TNPHandler
 from handlers.TodayonlineHandler import TodayonlineHandler
 from handlers.YahooHandler import YahooHandler
 
@@ -31,6 +32,9 @@ class HandlerManager:
         ),
         "straitstimes.com": defaultdict(
             lambda: STHandler
+        ),
+        "tnp.sg": defaultdict(
+            lambda: TNPHandler
         ),
         "todayonline.com": defaultdict(
             lambda: TodayonlineHandler
